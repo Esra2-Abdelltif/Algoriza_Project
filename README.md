@@ -1,20 +1,9 @@
 
 <h1 align="center"> 👋,Algoriza Intership project </h1>
 
-## 🔥 Streak Stats
-## 📱 Screens
+## 📱 Task one Screens
 
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+blob:https://web.whatsapp.com/33a13e59-6801-477f-a619-ea0765c099d0
+blob:https://web.whatsapp.com/5d6d4f19-737e-4068-a466-eb0556f49ea6
+blob:https://web.whatsapp.com/125778e0-b3f2-4444-9970-b5d541439be2
+blob:https://web.whatsapp.com/1fd21e6c-3ede-4181-8297-690b99f8c5fb
