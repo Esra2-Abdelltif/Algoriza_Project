@@ -1,4 +1,6 @@
-# flutter_project_algoriza
+
+<h1 align="center"> 👋,Algoriza Intership project </h1>
+## 📱 Screens
 
 A new Flutter application.
 
