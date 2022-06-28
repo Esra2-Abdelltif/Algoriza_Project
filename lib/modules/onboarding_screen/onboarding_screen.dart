@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_project_algoriza/modules/login_screen/loginScreen.dart';
 import 'package:flutter_project_algoriza/modules/onboarding_screen/onBoardingItem.dart';
+import 'package:flutter_project_algoriza/modules/signupScreen/signupScreen.dart';
 import 'package:flutter_project_algoriza/shared/components/components.dart';
 import 'package:flutter_project_algoriza/shared/constant/constant.dart';
 import 'package:flutter_project_algoriza/shared/style/size_config.dart';
@@ -35,7 +36,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
              isLast ? Row(
                children: [
                  Spacer(),
-                 CustomButton(text: 'Skip',width: 80,borderRadius: 50,color: HexColor("#faf2e7"),Fontcolor: Colors.black, onTap:(){
+                 CustomButton(text: 'Skip',width: 80,borderRadius: 50,color: HexColor("#faf2e7"),borderColor:HexColor("#faf2e7"),Fontcolor: Colors.black, onTap:(){
                    boardController.jumpToPage(2);
                  } ,)
                ],
@@ -74,8 +75,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                               count: boarding.length,
                               effect:   SlideEffect(
                                   spacing:  5.0,
-                                  radius:  2.0,
-                                  dotWidth:  25.0,
+                                  radius:  8.0,
+                                  dotWidth:  20.0,
                                   dotHeight:  7.0,
                                   dotColor: HexColor('#dadada'),
                                   activeDotColor:  HexColor('#ce5c4c'),
@@ -95,8 +96,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text('Don\'t have an account ?',style:TextStyle(fontWeight: FontWeight.w600,)),
-                          defultTextButton(text: 'Sign Up...', onPressed:() {
-                           // NavigateTo(router: SignupScreen(),context: context);
+                          defultTextButton(text: 'Sign Up', onPressed:() {
+                            NavigateTo(router: SignUpScreen(),context: context);
 
                           },),
 
