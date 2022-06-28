@@ -1,5 +1,7 @@
 
 <h1 align="center"> 👋,Algoriza Intership project </h1>
+
+## 🔥 Streak Stats
 ## 📱 Screens
 
 A new Flutter application.
