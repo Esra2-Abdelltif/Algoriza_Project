@@ -1,5 +1,5 @@
 
-<h1 align="center"> 👋,Algoriza Intership project </h1>
+<h1 align="center"> 👋,Algoriza Internship project </h1>
 
 ## 📱 Task one Screens
 
