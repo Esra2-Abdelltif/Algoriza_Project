@@ -14,15 +14,15 @@
 
 <div class="row">
   <div class="column">
-   <img src="[img1.png](https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg)" 
+   <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" 
 
   </div>
   <div class="column">
-  <img src="[img1.png](https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg)" 
+  <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" 
 
   </div>
   <div class="column">
-   <img src="[img1.png](https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg)" 
+   <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" 
 
   </div>
 </div>
