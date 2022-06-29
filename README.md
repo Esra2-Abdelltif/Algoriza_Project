@@ -2,19 +2,6 @@
 <h1 align="center"> 👋,Algoriza Internship project </h1>
 
 ## 📱 Task one Screens
-
-<div id="Wrapper" class="Wrapper">
-        <div id ="image-1">
-            <img id="top" src="https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg" class="jscolor border="0">
-        </div>
-        <div id ="image-2">
-            <img id="mid" src="https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg" class="jscolor border="0">
-        </div>
-        <div id ="image-3">
-            <img id="bot"src="https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg"   class="jscolor border="0">
-        </div>
-    </div>
-    
     
     
 ![Screenshot_20220629-174608](https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg)
