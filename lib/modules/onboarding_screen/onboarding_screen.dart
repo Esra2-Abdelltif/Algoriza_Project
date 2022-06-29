@@ -96,7 +96,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text('Don\'t have an account ?',style:TextStyle(fontWeight: FontWeight.w600,)),
-                          defultTextButton(text: 'Sign Up', onPressed:() {
+                          CustomTextButton(text: 'Sign Up', onPressed:() {
                             NavigateTo(router: SignUpScreen(),context: context);
 
                           },),

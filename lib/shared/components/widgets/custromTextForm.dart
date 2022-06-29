@@ -1,7 +1,6 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_algoriza/shared/style/colors.dart';
-import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 class  CustomTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -51,7 +50,7 @@ class  CustomTextField extends StatelessWidget {
           hoverColor: Colors.blue,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(5),
-            borderSide: BorderSide(color: defultColor),
+            borderSide: BorderSide(color:Colors.blue),
           ),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(5),

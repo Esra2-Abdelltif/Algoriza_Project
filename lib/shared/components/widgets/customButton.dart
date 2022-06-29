@@ -14,9 +14,10 @@ class CustomButton extends StatelessWidget {
   final Color Fontcolor;
   final bool IsSocialMediaLoginButton;
   final Color borderColor;
+  final double borderWidth;
 
 
-  const CustomButton({Key? key,this.borderColor=defultColor,this.IsSocialMediaLoginButton=false, this.width=double.infinity ,this.height=55,this.borderRadius =25 ,this.Fontcolor = Colors.white ,required this.text,this.fontsize=16,this.color=defultColor,required this.onTap}) : super(key: key);
+  const CustomButton({Key? key,this.borderWidth =1,this.borderColor=defultColor,this.IsSocialMediaLoginButton=false, this.width=double.infinity ,this.height=55,this.borderRadius =25 ,this.Fontcolor = Colors.white ,required this.text,this.fontsize=16,this.color=defultColor,required this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class CustomButton extends StatelessWidget {
         color: color,
         borderRadius: BorderRadius.circular(borderRadius),
         border: Border.all(
-          width: 1,
+          width: borderWidth,
           color: borderColor,
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_algoriza/modules/signupScreen/signupScreen.dart';
 import 'package:flutter_project_algoriza/shared/components/components.dart';
@@ -53,13 +54,11 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                              Text('Help',
                               style: TextStyle(
-                                color: Colors.blue,fontSize: 17
+                                color: Colors.blue,fontSize: 17,fontWeight: FontWeight.w500
 
                               ),
                             ),
                             Icon(Icons.help,color: Colors.blue,size: 25,)
-
-
 
 
                           ],
@@ -97,20 +96,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     Row(
                       children: [
                         Expanded(
-                          child: Divider(
-                            color: Colors.grey[500],
-                            height: 1.5,
-                          ),
+                          child: MyDivider()
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 15),
                           child: Text('OR'),
                         ),
                         Expanded(
-                          child: Divider(
-                            color: Colors.grey[500],
-                            height: 1.5,
-                          ),
+                          child:MyDivider(),
                         ),
                       ],),
                     SizedBox(height: 15,),
@@ -122,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Doesn\'t has any account ?',style:TextStyle(fontWeight: FontWeight.w600,)),
-                        defultTextButton(text: 'Register here',textcolor: Colors.blue, onPressed:() {
+                        CustomTextButton(text: 'Register here',textcolor: Colors.blue, onPressed:() {
                            NavigateTo(router: SignUpScreen(),context: context);
 
                         },),
