@@ -3,23 +3,7 @@
 
 ## 📱 Task one Screens
 
-<div class="column">
- <div class="row">
-   <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Snow" style="width:33.33%" >
-    <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Snow" style="width:33.33%"  >
-    <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Snow" style="width:33.33%"  >
-  
-</div>
- </div>
-      
-   <div class="row">
-  <div class="column">
-    <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Snow" style="width:33.33%">
-  </div>
-  <div class="column">
-    <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Forest" style="width:33.33%">
-  </div>
-  <div class="column">
-    <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Mountains" style="width:33.33%">
-  </div>
-</div>
+![Screenshot_20220629-174608](https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg)
+![Screenshot_20220629-174615](https://user-images.githubusercontent.com/72301777/176486029-df06dde7-39f1-4910-9a79-77ac0c05a0f9.jpg)
+![Screenshot_20220629-174621](https://user-images.githubusercontent.com/72301777/176486040-695536e7-941e-4ccb-9add-df91e74ff75b.jpg)
+![Screenshot_20220629-174628](https://user-images.githubusercontent.com/72301777/176486046-eec392ce-ef6f-47b1-9d66-9bbdf8b8d25a.jpg)
