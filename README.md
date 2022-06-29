@@ -11,6 +11,19 @@
 ![87b1463a-8dcb-4353-b5c0-f1ef8c44575c](https://user-images.githubusercontent.com/72301777/176323525-14089269-f4cd-444b-af8e-836202c564f8.jpg)
  </p>
      
+     <table>
+  <tr>
+    <td> <img src="[img1.png](https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg)"  alt="1" width = 360px height = 640px ></td>
+
+    <td><img src="[img2.png](https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg)" alt="2" width = 360px height = 640px></td>
+   </tr> 
+   <tr>
+      <td><img src="./Scshot/cab_arrived.png" alt="3" width = 360px height = 640px></td>
+
+      <td><img src="./Scshot/trip_end.png" align="right" alt="4" width = 360px height = 640px>
+  </td>
+  </tr>
+</table>
 
 <div class="row">
   <div class="column">
