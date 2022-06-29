@@ -3,7 +3,7 @@
 
 ## 📱 Task one Screens
 
-<img src="https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg" alt="Girl in a jacket" width="500" height="600">
+<img src="https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg" alt="Girl in a jacket" width="500" height="500">
 
 ![Screenshot_20220629-174608](https://user-images.githubusercontent.com/72301777/176486019-7fba8869-e378-4664-8d09-dec9fc61e6e4.jpg)
 ![Screenshot_20220629-174615](https://user-images.githubusercontent.com/72301777/176486029-df06dde7-39f1-4910-9a79-77ac0c05a0f9.jpg)
