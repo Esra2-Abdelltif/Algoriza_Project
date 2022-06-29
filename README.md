@@ -4,10 +4,10 @@
 ## 📱 Task one Screens
 
 
-<p align="center">
+ <div class="row">
    <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Snow" >
     <img src="https://user-images.githubusercontent.com/72301777/176323521-8849c887-d6d1-4c60-90e9-53b3d28acd14.jpg" alt="Snow" >
-</p>
+</div>
       
    <div class="row">
   <div class="column">
