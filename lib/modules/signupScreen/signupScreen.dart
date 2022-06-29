@@ -34,7 +34,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       Image.asset("assets/images/background.png",
                         width: double.infinity,
                         fit: BoxFit.fitWidth,
-                        height: 150,
+                        height: 120,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -85,16 +85,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                                   ),
                                 ),
-                                Container(
-                                  height: 30.0,
-                                  width: 30.0,
-                                  child: FittedBox(
-                                    child: FloatingActionButton(onPressed: (){
-                                    },
-                                      child: Icon(Icons.question_mark_outlined,),
-                                      mini: true,backgroundColor:  Colors.blue,),
-                                  ),
-                                ),
+
+                                Icon(Icons.help,color: Colors.blue,size: 25,)
+
 
 
 
@@ -111,7 +104,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CustomTextField(FieldName: 'Email',controller: emailController,hintText: 'Eg.example@gmail.com'
-                                    ,textInputType: TextInputType.emailAddress),
+                                    ,textInputType: TextInputType.emailAddress,),
                                 SizedBox(height: 15,),
                                 CustomTextField(FieldName: 'Phone Number',controller: PhoneController,
                                   hintText: 'Eg. 812345678',isphone: true,textInputType: TextInputType.phone,),
@@ -123,7 +116,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     });
                                   },
                                     icon: Icon(_secirty ? Icons.visibility : (Icons
-                                        .visibility_off),color: Colors.black),),),
+                                        .visibility_off),color: Colors.blue),),),
 
 
                               ],
@@ -167,14 +160,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text('Has any account ?',style:TextStyle(fontWeight: FontWeight.w600,)),
-                            defultTextButton(text: 'Sign in here', onPressed:() {
+                            defultTextButton(text: 'Sign in here', textcolor: Colors.blue,onPressed:() {
                                NavigateTo(router: LoginScreen(),context: context);
 
                             },),
 
                           ],
                         ),
-                        SizedBox(height: 25,),
+                        SizedBox(height: 10,),
                         Center(
                           child: Text(
                       'By registering your account, you are agree to our',
@@ -192,7 +185,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           color: Colors.blue,
                         ),
                       ),),
-                        SizedBox(height: 25,),
+                       // SizedBox(height: 25,),
 
 
 

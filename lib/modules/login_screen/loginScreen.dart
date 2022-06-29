@@ -41,7 +41,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(height: 25,),
-                    Text('Welcome To Fashion Daily',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 13,color: Colors.grey[600])),
+                    Text('Welcome To Fashion Daily',
+                        style: TextStyle(fontWeight: FontWeight.w500,fontSize: 13,color: Colors.grey[600])),
                     SizedBox(height: 15,),
                     //Title
                     Row(
@@ -56,16 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
                               ),
                             ),
-                            Container(
-                              height: 30.0,
-                              width: 30.0,
-                              child: FittedBox(
-                                child: FloatingActionButton(onPressed: (){
-                                },
-                                  child: Icon(Icons.question_mark_outlined,),
-                                  mini: true,backgroundColor:  Colors.blue,),
-                              ),
-                            ),
+                            Icon(Icons.help,color: Colors.blue,size: 25,)
 
 
 
@@ -130,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text('Doesn\'t has any account ?',style:TextStyle(fontWeight: FontWeight.w600,)),
-                        defultTextButton(text: 'Register here', onPressed:() {
+                        defultTextButton(text: 'Register here',textcolor: Colors.blue, onPressed:() {
                            NavigateTo(router: SignUpScreen(),context: context);
 
                         },),

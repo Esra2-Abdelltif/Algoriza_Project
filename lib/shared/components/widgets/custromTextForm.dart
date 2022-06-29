@@ -1,3 +1,4 @@
+import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_project_algoriza/shared/style/colors.dart';
 import 'package:intl_phone_number_input/intl_phone_number_input.dart';
@@ -5,19 +6,23 @@ import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 class  CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
+  final String? labelText;
   final String FieldName;
-  final Widget suffixIcon;
- // final Icon prefixIcon;
+  final Widget? suffixIcon;
+  final Widget? prefixIcon;
   final TextInputType textInputType;
   final bool isPass ;
   final bool isphone;
   final bool secirty ;
   CustomTextField({
   Key? key,
+    this.prefixIcon=null,
+    this.labelText=null,
     required this.FieldName,
   required this.controller,
   required this.hintText,
-   this.suffixIcon=const Icon( Icons.lock,color: Colors.black),
+
+   this.suffixIcon=null,
   required this.textInputType,
   this.isPass=false,
   this.isphone=false,this.secirty=false}) : super(key: key);
@@ -38,8 +43,12 @@ class  CustomTextField extends StatelessWidget {
       ),
       TextFormField(
         decoration: InputDecoration(
-          // labelText: 'Pass',
-          hintText:hintText,
+          labelText: labelText,
+          hintText:hintText,focusColor: Colors.blue,
+          hintStyle:TextStyle(fontSize: 16, ),
+         // filled: true,
+         // fillColor: Color(0xff25282C),
+          hoverColor: Colors.blue,
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: defultColor),
@@ -48,34 +57,18 @@ class  CustomTextField extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
             borderSide: BorderSide(color: Colors.grey, width: 2,),
           ),
-          suffixIcon: isPass ? suffixIcon: SizedBox.shrink(),
+          suffixIcon: isPass ? suffixIcon: null,
           prefixIcon: isphone ?  Padding(
             padding: const EdgeInsets.only(left:8.0),
-            child: InternationalPhoneNumberInput(
-              initialValue: PhoneNumber(
-                isoCode: PhoneNumber.getISO2CodeByPrefix('+81'),
-              ),
-              keyboardType: TextInputType.phone,
-              onInputChanged: (PhoneNumber number) {},
-              selectorConfig: const SelectorConfig(
-                selectorType: PhoneInputSelectorType.DROPDOWN,
-                showFlags: true,
-                trailingSpace:false,
-                useEmoji: true,
-              ),
-              ignoreBlank: false,
-              autoValidateMode: AutovalidateMode.disabled,
-               selectorTextStyle: TextStyle(color: Colors.black),
-              textFieldController: controller,
-              formatInput: true,
-              inputDecoration: InputDecoration.collapsed(
-                fillColor: Colors.black,
-                hintText: 'Eg. 812345678',
-
-              ),
-
+            child: CountryCodePicker(
+              onChanged: print,
+              showDropDownButton: true,
+              initialSelection: '+81',
+              favorite: ['+81','EG'],
+              showFlagMain: false,
+              showOnlyCountryWhenClosed: false,
             ),
-          ): null,
+          ) : prefixIcon,
         ),
         obscureText: secirty,
         controller: controller,
@@ -91,81 +84,4 @@ class  CustomTextField extends StatelessWidget {
   }
 }
 
-
-
-class CustomTextFormField extends StatelessWidget {
-  final TextEditingController? controller;
-  final TextInputType? type;
-  final Function()? onTap;
-  final String? Function(String?)? validate;
-  final String? placeHolder;
-  final double? verticalPadding;
-  final Icon? suffixIcon;
-  final Function()? suffixIconPressed;
-  final bool isPassword;
-  final String label;
-
-  CustomTextFormField({
-    Key? key,
-    required this.controller,
-    required this.validate,
-    required this.label,
-    this.type,
-    this.placeHolder,
-    this.onTap,
-    this.verticalPadding,
-    this.suffixIcon,
-    this.suffixIconPressed,
-    this.isPassword = false,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(
-        vertical: verticalPadding ?? 15,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            label,
-            style: TextStyle(
-              color: Colors.grey,
-              fontSize: 15,
-            ),
-          ),
-          const SizedBox(
-            height: 5,
-          ),
-          TextFormField(
-            controller: controller,
-            keyboardType: type,
-            obscureText: isPassword,
-            validator: validate,
-            onTap: onTap,
-            decoration: InputDecoration(
-              hintText: placeHolder,
-              hintStyle: TextStyle(color: Colors.grey),
-              enabledBorder: const OutlineInputBorder(
-                borderSide: BorderSide(width: 1, color: Colors.grey),
-              ),
-              focusedBorder: const OutlineInputBorder(
-                borderSide: BorderSide(width: 1, color: Colors.grey),
-              ),
-              filled: true,
-              fillColor:defultColor,
-              suffixIcon: suffixIcon == null
-                  ? null
-                  : InkWell(
-                onTap: suffixIconPressed,
-                child: suffixIcon,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
 
