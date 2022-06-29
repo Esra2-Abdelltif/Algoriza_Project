@@ -13,3 +13,14 @@
 ![87b1463a-8dcb-4353-b5c0-f1ef8c44575c](https://user-images.githubusercontent.com/72301777/176323525-14089269-f4cd-444b-af8e-836202c564f8.jpg)
   </div>
           </div> </div>
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4"><img id="img" src="https://placehold.it/400x400" class="img-responsive img-rounded" /></div>
+    <div class="col-xs-4"><img id="img2"src="https://placehold.it/400x400" class="img-responsive img-rounded" /></div>
+    <div class="col-xs-4"><img id="img3"src="https://placehold.it/400x400" class="img-responsive img-rounded /></div>
+  </div>
+</di
