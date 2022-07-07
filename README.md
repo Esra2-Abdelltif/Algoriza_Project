@@ -8,3 +8,8 @@
 ![Picsart_22-06-29_19-20-52-879](https://user-images.githubusercontent.com/72301777/176498117-96a1aaeb-f686-4914-ba7e-1f93843953d6.jpg)
 
     
+
+## 📱 Task Two (Counter)
+
+https://user-images.githubusercontent.com/72301777/177759754-544edb70-cf32-42da-b4f4-f63f05bcaf54.mp4
+
