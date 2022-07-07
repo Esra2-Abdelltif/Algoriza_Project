@@ -27,6 +27,10 @@ class CounterWidget extends StatelessWidget {
             debugPrint('CounterDecrementState');
             debugPrint('${BlocProvider.of<CounterCubit>(context).counter}');
           }
+          if(state is CounterClearState) {
+            debugPrint('CounterClearState');
+            debugPrint('${BlocProvider.of<CounterCubit>(context).counter}');
+          }
         },
         builder:  (BuildContext context ,CounterStates state) {
           var Cubit = CounterCubit.get(context);
