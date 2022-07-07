@@ -40,34 +40,40 @@ class CounterWidget extends StatelessWidget {
 
             children: [
               Spacer(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Column(
                 children: [
-                  FloatingActionButton(
-                    onPressed: () {
-                     Cubit.CounterIncrementFun();
-                    },
+                  Text('by Using Bloc',style: TextStyle(fontSize: 30)),
+                  SizedBox(height: 40,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      FloatingActionButton(
+                        onPressed: () {
+                         Cubit.CounterIncrementFun();
+                        },
 
-                    child:
-                    const Icon(
-                      Icons.add,size: 40,
-                    ),
+                        child:
+                        const Icon(
+                          Icons.add,size: 40,
+                        ),
 
 
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Text('${Cubit.counter}', style: TextStyle(
-                      fontSize: 30,),),
-                  ),
-                  FloatingActionButton(
-                    onPressed: () {
-                      Cubit.CounterDecrementFun();
-                    },
-                    child:const Icon(
-                      Icons.remove,size: 40,
-                    ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                        child: Text('${Cubit.counter}', style: TextStyle(
+                          fontSize: 30,),),
+                      ),
+                      FloatingActionButton(
+                        onPressed: () {
+                          Cubit.CounterDecrementFun();
+                        },
+                        child:const Icon(
+                          Icons.remove,size: 40,
+                        ),
 
+                      ),
+                    ],
                   ),
                 ],
               ),
