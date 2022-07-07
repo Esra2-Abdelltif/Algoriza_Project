@@ -11,5 +11,7 @@
 
 ## 📱 Task Two (Counter)
 
-https://user-images.githubusercontent.com/72301777/177759754-544edb70-cf32-42da-b4f4-f63f05bcaf54.mp4
+
+https://user-images.githubusercontent.com/72301777/177772257-cbb4fb7c-92ec-4fc8-9904-70c59800ebcc.mp4
+
 
