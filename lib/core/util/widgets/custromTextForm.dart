@@ -1,6 +1,6 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_algoriza/shared/style/colors.dart';
+import 'package:flutter_project_algoriza/core/util/style/colors.dart';
 
 class  CustomTextField extends StatelessWidget {
   final TextEditingController controller;
@@ -60,14 +60,19 @@ class  CustomTextField extends StatelessWidget {
           prefixIcon: isphone ?  Padding(
             padding: const EdgeInsets.only(left:8.0),
             child: CountryCodePicker(
-              onChanged: print,
+
+              onChanged:(CountryCode countryCode){},
               showDropDownButton: true,
               initialSelection: '+81',
-              favorite: ['+81','EG'],
+              favorite: ['+20','EG'],
               showFlagMain: false,
               showOnlyCountryWhenClosed: false,
             ),
-          ) : prefixIcon,
+          ) :
+          Padding(
+            padding: const EdgeInsets.only(left:8.0),
+            child: prefixIcon,
+          ),
         ),
         obscureText: secirty,
         controller: controller,

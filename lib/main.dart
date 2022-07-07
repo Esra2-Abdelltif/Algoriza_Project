@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_algoriza/modules/onboarding_screen/onboarding_screen.dart';
-import 'package:flutter_project_algoriza/shared/style/theme.dart';
+import 'package:flutter_project_algoriza/features/onboarding_screen/presentation/pages/onboarding_screen.dart';
+import 'package:flutter_project_algoriza/core/util/style/theme.dart';
 
 void main() {
   runApp(const MyApp());

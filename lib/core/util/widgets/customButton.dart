@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_algoriza/shared/style/colors.dart';
+import 'package:flutter_project_algoriza/core/util/style/colors.dart';
 
 class CustomButton extends StatelessWidget {
   final double width ;

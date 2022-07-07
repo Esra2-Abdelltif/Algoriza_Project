@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_project_algoriza/shared/style/colors.dart';
-import 'package:flutter_project_algoriza/shared/style/size_config.dart';
+import 'package:flutter_project_algoriza/core/util/style/colors.dart';
+import 'package:flutter_project_algoriza/core/util/style/size_config.dart';
+import 'package:flutter_project_algoriza/features/onboarding_screen/presentation/widget/Logo.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class BoardingModel {
@@ -36,13 +37,7 @@ Widget BuildBoardingItem(BoardingModel model) => Padding(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-         Row(
-             crossAxisAlignment: CrossAxisAlignment.center,
-             mainAxisAlignment: MainAxisAlignment.center,
-             children: [
-           Center(child: Text('7',style: TextStyle(color: HexColor('#ce5c4c'),fontSize: 35,fontWeight: FontWeight.w900),)),
-           Center(child: Text('Krave',style: TextStyle(color: defultColor,fontSize: 35,fontWeight: FontWeight.w900)))
-         ]),
+          Logo(),
           Expanded(
               child: Image(
             image: AssetImage('${model.image}'),
