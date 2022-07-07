@@ -17,3 +17,8 @@ class CounterDecrementState extends CounterStates{
 
   CounterDecrementState(this.Counter);
 }
+class CounterClearState extends CounterStates{
+  final int Counter;
+
+  CounterClearState(this.Counter);
+}

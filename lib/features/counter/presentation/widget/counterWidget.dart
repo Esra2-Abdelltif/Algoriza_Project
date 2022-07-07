@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_project_algoriza/core/util/widgets/customButton.dart';
 import 'package:flutter_project_algoriza/features/counter/presentation/cubit/state.dart';
 
 import '../cubit/cubit.dart';
@@ -30,9 +31,11 @@ class CounterWidget extends StatelessWidget {
         builder:  (BuildContext context ,CounterStates state) {
           var Cubit = CounterCubit.get(context);
           return  Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+
             children: [
+              Spacer(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -64,6 +67,11 @@ class CounterWidget extends StatelessWidget {
                   ),
                 ],
               ),
+             Spacer(),
+              CustomButton(text: 'Clear', width: double.infinity,
+                  height: 70, fontsize: 25,borderRadius: 1,
+                  onTap:( ){Cubit.CounterClear();}),
+
             ],
           );
         },

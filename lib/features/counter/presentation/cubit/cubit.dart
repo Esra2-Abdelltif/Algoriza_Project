@@ -20,5 +20,9 @@ class CounterCubit extends Cubit<CounterStates>{
     counter++;
     emit(CounterIncrementState(counter));
   }
+  void CounterClear(){
+    counter=0;
+    emit(CounterClearState(counter));
+  }
 
 }
