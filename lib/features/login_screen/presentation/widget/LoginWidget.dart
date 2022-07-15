@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_algoriza/features/User/presention/pages/user_screen.dart';
 import 'package:flutter_project_algoriza/features/counter/presentation/pages/counterScreen.dart';
 import 'package:flutter_project_algoriza/features/singUpScreen/presentation/pages/signupScreen.dart';
 import 'package:flutter_project_algoriza/core/util/widgets/customButton.dart';
@@ -92,7 +93,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   //Signin
                   CustomButton(text: 'Sign in',color: Colors.blue, borderRadius: 5,onTap:(){
                     if (formkey.currentState!.validate()){
-                      NavigateTo(router: CounterScreen(),context: context);
+                      NavigateAndFinsh(router: UserScreen(),context: context);
 
                     }
 

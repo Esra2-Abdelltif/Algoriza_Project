@@ -39,6 +39,10 @@ dependencies:
   country_code_picker: ^2.0.2
   flutter_bloc: ^8.0.1
   bloc: ^8.0.2
+  sqflite: ^2.0.1
+  path: ^1.8.0
+  conditional_builder_null_safety: ^0.0.6
+  shared_preferences: ^2.0.13
 
 
 dev_dependencies:
